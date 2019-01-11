@@ -17,4 +17,8 @@ function readyNow(){
         outputString += `</div><br>`;
         displayCounter.append(outputString);
     });
+
+    $('.container').on('click', '#deleteBtn', function () {
+        $(this).parent().remove();
+    });
 }
