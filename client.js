@@ -21,4 +21,10 @@ function readyNow(){
     $('.container').on('click', '#deleteBtn', function () {
         $(this).parent().remove();
     });
+
+    $('.container').on('click', '#swapBtn', function () {
+        console.log(this);
+        $(this).parent().toggleClass('mustard');
+        
+    });
 }
